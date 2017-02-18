@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Material-Design-Icons";
-  src: url("../fonts/material-design-icons/Material-Design-Icons.eot?#iefix") format("embedded-opentype"), url("../fonts/material-design-icons/Material-Design-Icons.woff2") format("woff2"), url("../fonts/material-design-icons/Material-Design-Icons.woff") format("woff"), url("../fonts/material-design-icons/Material-Design-Icons.ttf") format("truetype"), url("../fonts/material-design-icons/Material-Design-Icons.svg#Material-Design-Icons") format("svg");
+  src: url("/Materialize/fonts/material-design-icons/Material-Design-Icons.eot?#iefix") format("embedded-opentype"), url("/Materialize/fonts/material-design-icons/Material-Design-Icons.woff2") format("woff2"), url("/Materialize/fonts/material-design-icons/Material-Design-Icons.woff") format("woff"), url("/Materialize/fonts/material-design-icons/Material-Design-Icons.ttf") format("truetype"), url("/Materialize/fonts/material-design-icons/Material-Design-Icons.svg#Material-Design-Icons") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -9,41 +9,41 @@
   font-family: 'Material Icons';
   font-style: normal;
   font-weight: 400;
-  src: local('Material Icons'), local('MaterialIcons-Regular'), url(../fonts/material-design-icons/Material-Icons.woff2) format('woff2');
+  src: local('Material Icons'), local('MaterialIcons-Regular'), url("/Materialize/fonts/material-design-icons/Material-Icons.woff2") format('woff2');
 }
 
 @font-face {
   font-family: "Roboto";
-  src: local(Roboto Thin), url("../fonts/roboto/Roboto-Thin.eot");
-  src: url("../fonts/roboto/Roboto-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/Roboto-Thin.woff2") format("woff2"), url("../fonts/roboto/Roboto-Thin.woff") format("woff"), url("../fonts/roboto/Roboto-Thin.ttf") format("truetype");
+  src: local(Roboto Thin), url("/Materialize/fonts/roboto/Roboto-Thin.eot");
+  src: url("/Materialize/fonts/roboto/Roboto-Thin.eot?#iefix") format("embedded-opentype"), url("/Materialize/fonts/roboto/Roboto-Thin.woff2") format("woff2"), url("/Materialize/fonts/roboto/Roboto-Thin.woff") format("woff"), url("/Materialize/fonts/roboto/Roboto-Thin.ttf") format("truetype");
   font-weight: 200;
 }
 
 @font-face {
   font-family: "Roboto";
-  src: local(Roboto Light), url("../fonts/roboto/Roboto-Light.eot");
-  src: url("../fonts/roboto/Roboto-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/Roboto-Light.woff2") format("woff2"), url("../fonts/roboto/Roboto-Light.woff") format("woff"), url("../fonts/roboto/Roboto-Light.ttf") format("truetype");
+  src: local(Roboto Light), url("/Materialize/fonts/roboto/Roboto-Light.eot");
+  src: url("/Materialize/fonts/roboto/Roboto-Light.eot?#iefix") format("embedded-opentype"), url("/Materialize/fonts/roboto/Roboto-Light.woff2") format("woff2"), url("/Materialize/fonts/roboto/Roboto-Light.woff") format("woff"), url("/Materialize/fonts/roboto/Roboto-Light.ttf") format("truetype");
   font-weight: 300;
 }
 
 @font-face {
   font-family: "Roboto";
-  src: local(Roboto Regular), url("../fonts/roboto/Roboto-Regular.eot");
-  src: url("../fonts/roboto/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/Roboto-Regular.woff2") format("woff2"), url("../fonts/roboto/Roboto-Regular.woff") format("woff"), url("../fonts/roboto/Roboto-Regular.ttf") format("truetype");
+  src: local(Roboto Regular), url("/Materialize/fonts/roboto/Roboto-Regular.eot");
+  src: url("/Materialize/fonts/roboto/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("/Materialize/fonts/roboto/Roboto-Regular.woff2") format("woff2"), url("/Materialize/fonts/roboto/Roboto-Regular.woff") format("woff"), url("/Materialize/fonts/roboto/Roboto-Regular.ttf") format("truetype");
   font-weight: 400;
 }
 
 @font-face {
   font-family: "Roboto";
-  src: url("../fonts/roboto/Roboto-Medium.eot");
-  src: url("../fonts/roboto/Roboto-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/Roboto-Medium.woff2") format("woff2"), url("../fonts/roboto/Roboto-Medium.woff") format("woff"), url("../fonts/roboto/Roboto-Medium.ttf") format("truetype");
+  src: url("/Materialize/fonts/roboto/Roboto-Medium.eot");
+  src: url("/Materialize/fonts/roboto/Roboto-Medium.eot?#iefix") format("embedded-opentype"), url("/Materialize/fonts/roboto/Roboto-Medium.woff2") format("woff2"), url("/Materialize/fonts/roboto/Roboto-Medium.woff") format("woff"), url("/Materialize/fonts/roboto/Roboto-Medium.ttf") format("truetype");
   font-weight: 500;
 }
 
 @font-face {
   font-family: "Roboto";
-  src: url("../fonts/roboto/Roboto-Bold.eot");
-  src: url("../fonts/roboto/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/Roboto-Bold.woff2") format("woff2"), url("../fonts/roboto/Roboto-Bold.woff") format("woff"), url("../fonts/roboto/Roboto-Bold.ttf") format("truetype");
+  src: url("/Materialize/fonts/roboto/Roboto-Bold.eot");
+  src: url("/Materialize/fonts/roboto/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("/Materialize/fonts/roboto/Roboto-Bold.woff2") format("woff2"), url("/Materialize/fonts/roboto/Roboto-Bold.woff") format("woff"), url("/Materialize/fonts/roboto/Roboto-Bold.ttf") format("truetype");
   font-weight: 700;
 }
 
@@ -78,109 +78,6 @@ div .button-collapse {
 
 .materialize-blue-text.own-text-color {
   color: rgb(0, 112, 192);
-}
-
-#page-title {
-  font-family: cursive;
-  text-transform: none;
-}
-
-#layout-1 {
-  background: url("../libs/img/spider-background.jpg") no-repeat fixed;
-  width: 100%;
-  height: 400px;
-  background-size: inherit;
-  background-position: calc(50% + 136px) -180px;
-}
-
-.inside_parallax {
-  padding-top: 100px;
-  position: relative;
-  top: -100%;
-  left: 0px;
-}
-
-.inside_parallax>a#page-title {
-  font-size: 3.4em;
-  color: white;
-  margin-left: calc(50% - 200px);
-  text-transform: uppercase;
-  line-height: 3.4em;
-}
-
-#overlay {
-  background-image: url("../libs/img/overlay.png");
-  position: relative;
-  padding: 0px;
-  height: 100%;
-  width: 100%;
-  margin: 0px;
-  top: -100%;
-  left: 0px;
-}
-
-/*#particles-js {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}*/
-
-#layout-2 {
-  height: 600px;
-}
-
-#layout-3 {
-  height: 600px;
-  min-height: 600px;
-}
-
-#first-panel, #second-panel {
-  min-width: 740px;
-  width: 100%;
-  height: 300px;
-  background-color: #1E88E5;
-}
-
-#first-panel img, #second-panel img {
-  height: 100%;
-  padding: 0;
-}
-
-#first-panel p, #second-panel p {
-  text-align: center;
-}
-
-
-#layout-3>div {
-  padding: 0;
-}
-
-#layout-4 {
-  height: 100px;
-}
-
-footer {
-  padding-left: 0;
-  height: 60px;
-  background-color: #616161;
-  color: white;
-  text-align: center;
-  padding-top: 16px;
-}
-
-#first-panel>div>h3, #second-panel>div>h3 {
-    margin-top: 40px;
-}
-
-#layout-2>div>h4 {
-  margin-top: 40px;
-  font-size: 42px;
-}
-
-#layout-2>div>div>span {
-  font-size: 20px;
-  margin-top: 80px;
-  text-align: center;
 }
 
 /*!
@@ -3569,7 +3466,7 @@ nav ul a span.badge {
 
 @font-face {
   font-family: "Material-Design-Icons";
-  src: url("../fonts/material-design-icons/Material-Design-Icons.eot?#iefix") format("embedded-opentype"), url("../fonts/material-design-icons/Material-Design-Icons.woff2") format("woff2"), url("../fonts/material-design-icons/Material-Design-Icons.woff") format("woff"), url("../fonts/material-design-icons/Material-Design-Icons.ttf") format("truetype"), url("../fonts/material-design-icons/Material-Design-Icons.svg#Material-Design-Icons") format("svg");
+  src: url("/Materialize/fonts/material-design-icons/Material-Design-Icons.eot?#iefix") format("embedded-opentype"), url("/Materialize/fonts/material-design-icons/Material-Design-Icons.woff2") format("woff2"), url("/Materialize/fonts/material-design-icons/Material-Design-Icons.woff") format("woff"), url("/Materialize/fonts/material-design-icons/Material-Design-Icons.ttf") format("truetype"), url("/Materialize/fonts/material-design-icons/Material-Design-Icons.svg#Material-Design-Icons") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -3578,7 +3475,7 @@ nav ul a span.badge {
   font-family: 'Material Icons';
   font-style: normal;
   font-weight: 400;
-  src: local('Material Icons'), local('MaterialIcons-Regular'), url(../fonts/material-design-icons/Material-Icons.woff2) format('woff2');
+  src: local('Material Icons'), local('MaterialIcons-Regular'), url(/Materialize/fonts/material-design-icons/Material-Icons.woff2) format('woff2');
 }
 
 .material-icons {
@@ -7735,36 +7632,36 @@ nav .input-field label.active {
 
 @font-face {
   font-family: "Roboto";
-  src: local(Roboto Thin), url("../fonts/roboto/Roboto-Thin.eot");
-  src: url("../fonts/roboto/Roboto-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/Roboto-Thin.woff2") format("woff2"), url("../fonts/roboto/Roboto-Thin.woff") format("woff"), url("../fonts/roboto/Roboto-Thin.ttf") format("truetype");
+  src: local(Roboto Thin), url("/Materialize/fonts/roboto/Roboto-Thin.eot");
+  src: url("/Materialize/fonts/roboto/Roboto-Thin.eot?#iefix") format("embedded-opentype"), url("/Materialize/fonts/roboto/Roboto-Thin.woff2") format("woff2"), url("/Materialize/fonts/roboto/Roboto-Thin.woff") format("woff"), url("/Materialize/fonts/roboto/Roboto-Thin.ttf") format("truetype");
   font-weight: 200;
 }
 
 @font-face {
   font-family: "Roboto";
-  src: local(Roboto Light), url("../fonts/roboto/Roboto-Light.eot");
-  src: url("../fonts/roboto/Roboto-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/Roboto-Light.woff2") format("woff2"), url("../fonts/roboto/Roboto-Light.woff") format("woff"), url("../fonts/roboto/Roboto-Light.ttf") format("truetype");
+  src: local(Roboto Light), url("/Materialize/fonts/roboto/Roboto-Light.eot");
+  src: url("/Materialize/fonts/roboto/Roboto-Light.eot?#iefix") format("embedded-opentype"), url("/Materialize/fonts/roboto/Roboto-Light.woff2") format("woff2"), url("/Materialize/fonts/roboto/Roboto-Light.woff") format("woff"), url("/Materialize/fonts/roboto/Roboto-Light.ttf") format("truetype");
   font-weight: 300;
 }
 
 @font-face {
   font-family: "Roboto";
-  src: local(Roboto Regular), url("../fonts/roboto/Roboto-Regular.eot");
-  src: url("../fonts/roboto/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/Roboto-Regular.woff2") format("woff2"), url("../fonts/roboto/Roboto-Regular.woff") format("woff"), url("../fonts/roboto/Roboto-Regular.ttf") format("truetype");
+  src: local(Roboto Regular), url("/Materialize/fonts/roboto/Roboto-Regular.eot");
+  src: url("/Materialize/fonts/roboto/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("/Materialize/fonts/roboto/Roboto-Regular.woff2") format("woff2"), url("/Materialize/fonts/roboto/Roboto-Regular.woff") format("woff"), url("/Materialize/fonts/roboto/Roboto-Regular.ttf") format("truetype");
   font-weight: 400;
 }
 
 @font-face {
   font-family: "Roboto";
-  src: url("../fonts/roboto/Roboto-Medium.eot");
-  src: url("../fonts/roboto/Roboto-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/Roboto-Medium.woff2") format("woff2"), url("../fonts/roboto/Roboto-Medium.woff") format("woff"), url("../fonts/roboto/Roboto-Medium.ttf") format("truetype");
+  src: url("/Materialize/fonts/roboto/Roboto-Medium.eot");
+  src: url("/Materialize/fonts/roboto/Roboto-Medium.eot?#iefix") format("embedded-opentype"), url("/Materialize/fonts/roboto/Roboto-Medium.woff2") format("woff2"), url("/Materialize/fonts/roboto/Roboto-Medium.woff") format("woff"), url("/Materialize/fonts/roboto/Roboto-Medium.ttf") format("truetype");
   font-weight: 500;
 }
 
 @font-face {
   font-family: "Roboto";
-  src: url("../fonts/roboto/Roboto-Bold.eot");
-  src: url("../fonts/roboto/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/Roboto-Bold.woff2") format("woff2"), url("../fonts/roboto/Roboto-Bold.woff") format("woff"), url("../fonts/roboto/Roboto-Bold.ttf") format("truetype");
+  src: url("/Materialize/fonts/roboto/Roboto-Bold.eot");
+  src: url("/Materialize/fonts/roboto/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("/Materialize/fonts/roboto/Roboto-Bold.woff2") format("woff2"), url("/Materialize/fonts/roboto/Roboto-Bold.woff") format("woff"), url("/Materialize/fonts/roboto/Roboto-Bold.ttf") format("truetype");
   font-weight: 700;
 }
 
@@ -10907,7 +10804,7 @@ select {
 }
 
 /**
- * When the picker opens...
+ * When the picker opens..
  */
 .picker--opened .picker__holder {
   top: 0;

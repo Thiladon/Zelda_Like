@@ -87,7 +87,7 @@ Editor.prototype.init = function (canvas, tileset) {
 
 	// load file depending of cases name in editor.html.
 
-	loadJSON("/Zelda/js/editor/maps/" + document.getElementById("file_name").value + ".json", this, function($this, data) {
+	loadJSON("/js/editor/maps/" + document.getElementById("file_name").value + ".json", this, function($this, data) {
 		$this.data = data;
 		// On lance l'instance.
 			$this._onEachFrame($this.run($this));
@@ -185,7 +185,7 @@ Editor.prototype.addToUndo = function() {
 Editor.prototype.verify = function(success, error) {
 	if(document.getElementById("file_name").value + ".json" != "new.json")
 	{
-		loadJSON("/Zelda/js/editor/maps/" + document.getElementById("file_name").value + ".json", this, function($this, data){
+		loadJSON("/js/editor/maps/" + document.getElementById("file_name").value + ".json", this, function($this, data){
 			console.log("yep");
 
 			if(JSON.stringify(data) === JSON.stringify($this.data)) {

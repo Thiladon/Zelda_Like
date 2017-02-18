@@ -12,7 +12,7 @@ var images = {};
 
 (function() {
 	window.onload = function() {
-		tilesetpath = "/Zelda/img/leveleditor/tileset/" + document.getElementById("tileset-choice").childNodes[1].childNodes[1].value + ".png";
+		tilesetpath = "/img/leveleditor/tileset/" + document.getElementById("tileset-choice").childNodes[1].childNodes[1].value + ".png";
 		
 		document.getElementById("third").childNodes[1].childNodes[1].src = tilesetpath;
 
