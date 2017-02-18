@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../css/materialize.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<meta name="author" content="Marchand Alexis">
+	<title>Zelda - Level Editor</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<div class="row">
+		<div class="col s4" id="first">
+			<div id="button_container">
+				<div class="button grey darken-3 waves-effect waves-light">
+					<i class="material-icons left">note_add</i>
+					<a href="#" id="create_map">Create map</a>
+				</div>
+				<div class="button right offset-s2 grey darken-3 waves-effect waves-light">
+					<i class="material-icons left">file_download</i>
+					<a href="#" id="load_map">Load map</a>
+				</div>
+			</div>
+			<div id="input_container">
+				<div id="filename" class="input-field col s5">
+					<input id="file_name" disabled value="new" type="text" class="validate">
+					<label for="file_name">Name</label>
+		        </div>
+		        <div id="rename" class="button right offset-s2 grey darken-3 waves-effect waves-light">
+					<i class="material-icons left">mode_edit</i>
+					<a href="#modalName" id="_rename" class="modal-trigger">Rename</a>
+				</div>
+		        <div class="separator"></div>
+        		<div class="input-field col s12" id="tileset-choice">
+				    <select value="">
+						<option value="" disabled selected>exterieur</option>
+				    </select>
+				    <label>Tileset</label>
+				</div>
+			</div>
+		</div>
+		<div class="col s4" id="second">
+			<ul id="time" class="tabs grey darken-3 tabs-fixed-width">
+				<li class="tab"><a href="#past" class="active waves-effect waves-light">Past</a></li>
+				<li class="tab"><a href="#present" class="waves-effect waves-light">Present</a></li>
+			</ul>
+			<div id="seasons" class="col s12">
+				<div id="winter" class="active"></div>
+				<div id="spring"></div>
+				<div id="summer"></div>
+				<div id="automn"></div>
+			</div>
+			<ul id="layout" class="tabs grey darken-3 tabs-fixed-width">
+				<li class="tab"><a href="#ground" class="active waves-effect waves-light">Ground</a></li>
+				<li class="tab"><a href="#event" class="waves-effect waves-light">Event</a></li>
+			</ul>
+			<canvas id="level-editor" style="margin-left: calc(50% - 239px/2); margin-top: 70px;"></canvas>	
+		</div>
+		<div class="col s4" id="third">
+			<div class="valign-wrapper" style="height: 100%;">
+				<img src="" id="tileset" class="valign" style="margin-left: calc(50% - 128px);">
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal Structure -->
+  <div id="modalName" class="modal modal-fixed-footer">
+    <div class="modal-content">
+    	<div id="filerename" class="input-field col s5">
+			<input id="file_rename" value="" type="text" class="validate">
+			<label for="file_rename">Name</label>
+	    </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Valider</a>
+      <a href="#!" class="modal-action modal-cancel waves-effect waves-red btn-flat ">Annuler</a>
+    </div>
+  </div>
+
+  <div id="saveFile" class="modal modal-fixed-footer">
+    <div class="modal-content">
+    	<p>Votre fichier n'as pas encore été créer.</p>
+    	<p>Voulez vous l'enreistrez afin de ne pas perdre votre progression ?</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" id="register" class="modal-action saveFile modal-close waves-effect waves-green btn-flat ">Enregistrer</a>
+      <a href="#!" id="un-register" class="modal-action saveFile modal-close waves-effect waves-red btn-flat ">Ne pas enregistrer</a>
+      <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat ">Annuler</a>
+    </div>
+  </div>
+
+	<!-- Load JavaScript at the end of the body for fastest performances -->
+
+	<script type="text/javascript" src="../js/jquery-2.2.0.js"></script>
+	<script type="text/javascript" src="../js/materialize.js"></script>
+	<script type="text/javascript" src="../js/Editor/script.js"></script>
+	<script type="text/javascript" src="../js/Editor/class/editor.js"></script>
+	<script type="text/javascript">
+		(function(){
+			$(document).ready(function() {
+				$('select').material_select();
+				$('#modalName').modal(
+				{
+					dismissible: true, // Modal can be dismissed by clicking outside of the modal
+					closeHandler: function($this)
+					{
+						closeHandler($this);
+					}
+				});
+				$('#saveFile').modal({
+					dismissible: true,
+					closeHandler: false
+				});
+			})
+
+			function closeHandler($this)
+			{
+				if( "".indexOf(document.getElementById("file_rename").value) === 0 ) {
+					Materialize.toast("<span> Le fichier n'est pas nommé </span>", 5000, "red");
+				} else if ( document.getElementById('file_name').value.indexOf(document.getElementById("file_rename").value) === 0 ) {
+					Materialize.toast("<span> Le fichier n'as pas été renommé </span>", 5000, "red");
+				} else {
+					Materialize.toast("<span> Le fichier à bien été renommé </span>", 5000, "green");
+					document.getElementById("file_name").value = document.getElementById("file_rename").value;
+					$this.modal('close');	
+				}
+			}
+		})();
+	</script>
+</body>
+</html>

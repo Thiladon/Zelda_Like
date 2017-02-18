@@ -1,0 +1,25 @@
+{
+  "name": "zelda",
+  "version": "1.0.0",
+  "description": "Zelda_Like",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Thiladon/Zelda_Like.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Thiladon/Zelda_Like/issues"
+  },
+  "homepage": "https://github.com/Thiladon/Zelda_Like#readme",
+  "dependencies": {
+    "ejs": "^2.5.6",
+    "express": "^4.14.1",
+    "nodemon": "^1.11.0"
+  }
+}

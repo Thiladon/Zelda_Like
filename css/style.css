@@ -1,0 +1,132 @@
+body {
+	background-color: #fcfcfc;
+}
+
+.button {
+	padding: 0 !important;
+	color: white;
+	width: 158px;
+}
+
+.button i {
+	padding: 7px 8px 8px 8px;
+	margin: 0;
+	background-color: rgba(0, 0, 0, 0.2);
+	border-bottom: 2px solid rgba(0, 0, 0, 0.2)
+}
+
+.button a {
+	color: white;
+	display: block;
+	margin-left: 40px;
+	padding: 10px 0 7px 16px;
+	border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.row {
+	height: 100%;
+}
+
+body .row>.col {
+	height: 100%;
+}
+
+#button_container {
+	padding: 60px 11.250px 0 11.250px;
+}
+
+#input_container {
+	padding: 30px 11.250px 0 2px;
+}
+
+#filename {
+	margin-top: 0;
+}
+
+#rename {
+	margin-top: 5px;
+}
+
+li.tab {
+	border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+#second {
+	padding-top: 54px; 
+}
+
+#seasons {
+    padding: 24px 0px 24px 3px;
+}
+
+#seasons div {
+	margin: 0 4px;
+	cursor: pointer;
+}
+
+#winter, #spring, #summer, #automn {
+	display: inline-block;
+	width: 96px;
+	height: 96px;
+	transition: all ease 0.2s;
+}
+
+.separator {
+	padding: 54px;
+}
+
+#winter {
+	background-image: url("../img/leveleditor/winter.png");
+}
+
+#spring {
+	background-image: url("../img/leveleditor/spring.png");
+}
+
+#summer {
+	background-image: url("../img/leveleditor/summer.png");
+}
+
+#automn {
+	background-image: url("../img/leveleditor/automn.png");
+}
+
+#winter:hover, #winter.active {
+	background-image: url("../img/leveleditor/winter_active.png");
+}
+
+#spring:hover, #spring.active {
+	background-image: url("../img/leveleditor/spring_active.png");
+}
+
+#summer:hover, #summer.active {
+	background-image: url("../img/leveleditor/summer_active.png");
+}
+
+#automn:hover, #automn.active {
+	background-image: url("../img/leveleditor/automn_active.png");
+}
+
+/* 
+ *	@define: Modal box
+ */
+	/* bod modalName */
+
+	#modalName {
+		top: 25% !important;
+		height: 50% !important;
+		width: 40% !important;
+	}
+
+	#modalName .modal-content {
+		padding: 120px 40px 24px 40px;
+	}
+
+	.modal-overlay {
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		background-color: rgba(0, 0, 0, 0.5);
+	}
