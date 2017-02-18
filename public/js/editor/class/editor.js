@@ -206,10 +206,6 @@ Editor.prototype.verify = function(success, error) {
 	}
 }
 
-Editor.prototype.create = function(){
-	console.log("I'm called");
-}
-
 function loadJSON(path, $this, success, error)
 {
     var xhr = new XMLHttpRequest();

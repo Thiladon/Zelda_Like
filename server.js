@@ -1,14 +1,26 @@
 "use strict"
 
 const app = require('express')()
-let express = require('express');
+var server = require('http').Server(app)
+var io = require('socket.io')(server)
+var fs = require('fs')
+let express = require('express')
 
-app.set('view engine', 'ejs');
+app.set('view engine', 'ejs')
 
-app.use(express.static('public'));
+app.use(express.static('public'))
 
-app.get('/', (request, response) => {
-    response.render('pages/editor');
-});
+app.get('/', (req, res) => {
+    res.render('pages/editor')
+})
 
-app.listen(8080);
+io.sockets.on('connection', function(socket) {
+	socket.emit('message', 'Vous êtes bien connecté')
+
+	socket.on('saveJSON', function(data) {
+		data = JSON.stringify(data)
+		fs.writeFileSync("/js/editor/maps/" + data.title + ".json", data, "UTF-8")
+	})
+})
+
+server.listen(8080)

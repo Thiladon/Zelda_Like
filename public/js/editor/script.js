@@ -56,56 +56,64 @@ var images = {};
 	}
 	//$(".input_container div select").
 }());
+(function() {
+    var socket = io.connect('http://localhost:8080');
 
-$('#time li a').on("click", function(){
-	if(!$(this).hasClass("active"))
-	{
-		id = this.href;
-		i = 0;
+    $('#register').on('click', function() {
+    	socket.emit('saveJSON', levelEditor.data);
+    })
 
-		$("#time li a").each(function() {
-			i++;
-			if(this.href === id)
-				time_id = i;
-		})
-	}
-	console.log("time_id : " + time_id);
-})
+	$('#time li a').on("click", function(){
+		if(!$(this).hasClass("active"))
+		{
+			id = this.href;
+			i = 0;
 
-$('#layout li a').on("click", function(){
-	if(!$(this).hasClass("active"))
-	{
-		id = this.href;
-		i = 0;
+			$("#time li a").each(function() {
+				i++;
+				if(this.href === id)
+					time_id = i;
+			})
+		}
+		console.log("time_id : " + time_id);
+	})
 
-		$("#layout li a").each(function() {
-			i++;
-			if(this.href === id)
-				layout_id = i;
-		})
-	}
-	console.log("layout_id = " + layout_id);
-})
+	$('#layout li a').on("click", function(){
+		if(!$(this).hasClass("active"))
+		{
+			id = this.href;
+			i = 0;
 
-$("#seasons div").on("click", function(){
-	if(!$(this).hasClass("active"))
-	{
-		$("#seasons div.active").removeClass("active");
-		$(this).addClass("active");
-		i = 0;
-		$("#seasons div").each(function() {
-			i++;
-			if($(this).hasClass("active")) {
-				season_id = i;
-			}
-		})
-	}
-	console.log(season_id);
-})
+			$("#layout li a").each(function() {
+				i++;
+				if(this.href === id)
+					layout_id = i;
+			})
+		}
+		console.log("layout_id = " + layout_id);
+	})
 
-$('#tileset').on("click", function(e){
-	x = Math.floor(e.offsetX/16);
-	y = Math.floor(e.offsetY/16);
+	$("#seasons div").on("click", function(){
+		if(!$(this).hasClass("active"))
+		{
+			$("#seasons div.active").removeClass("active");
+			$(this).addClass("active");
+			i = 0;
+			$("#seasons div").each(function() {
+				i++;
+				if($(this).hasClass("active")) {
+					season_id = i;
+				}
+			})
+		}
+		console.log(season_id);
+	})
 
-	console.log("Vous êtes à la case : " + x + "," + y);
-})
+	$('#tileset').on("click", function(e){
+		x = Math.floor(e.offsetX/16);
+		y = Math.floor(e.offsetY/16);
+
+		console.log("Vous êtes à la case : " + x + "," + y);
+	})
+
+}());
